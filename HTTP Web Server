@@ -39,7 +39,7 @@ class MyServer(BaseHTTPRequestHandler):
            <h1>Raspberry Pi Web Server</h1>
            <p>CPU temperature is {}</p>
            <form action="/" method="POST">
-               RGB Traka :
+               RGB Strip :
 		<br>
                <input type="submit" name="submit" value="Blue">
                <input type="submit" name="submit" value="BlueOff">
