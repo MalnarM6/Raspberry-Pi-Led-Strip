@@ -6,7 +6,7 @@ import pigpio
 pi = pigpio.pi()
 from http.server import BaseHTTPRequestHandler, HTTPServer
 
-host_name = '192.168.1.19'  # IP Address of Raspberry Pi
+host_name = '192.168.1.19'  # IP adresa Raspberry Pi
 host_port = 8000
 
 def setupGPIO():
@@ -77,7 +77,7 @@ class MyServer(BaseHTTPRequestHandler):
             pi.set_PWM_dutycycle(22, 255) 
         elif post_data == 'GreenOff':
             pi.set_PWM_dutycycle(22, 0)
-        self._redirect('/')  # Redirect back to the root url
+        self._redirect('/')  
 
 
 # # # # # Main # # # # #
